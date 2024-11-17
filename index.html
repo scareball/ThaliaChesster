@@ -27,6 +27,10 @@
                 background-color: skyblue !important;
             }
 
+            .alert{
+                height: 50px;
+            }
+
             .home {
                 background-image:url("homeBackground.jpg");
                 min-height : 300%;
@@ -79,17 +83,6 @@
         <!-- Background Image-->
         <div class="home bg-image z-n1 position-absolute" style="filter:brightness(30%)"></div>
 
-        <div class="z-2 position-absolute m-3">
-            <div class="container fluid">
-                <div class="alert alert-warning d-flex align-items-center" role="alert">
-                    <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
-                    <div>
-                    An example warning alert with an icon
-                    </div>
-                </div>
-            </div>    
-        </div>
-
         <div class="z-1 position-absolute m-3">
             <div class="container-fluid">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-light bar py-4">
@@ -105,19 +98,9 @@
                     </div>
                 </nav>
 
-                <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-                    <symbol id="check-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                    </symbol>
-                    <symbol id="info-fill" viewBox="0 0 16 16">
-                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-                    </symbol>
-                    <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
-                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                    </symbol>
-                </svg>
 
-                <div class="row justify-content-center mt-5" style="margin-top: 100px">
+
+                <div class="row justify-content-center pt-5" style="margin-top: 100px">
                     <div class="col-lg-5 ml-auto mr-auto pt-5">
                         <p class="text" class="text-center">
                             Hi, my name is Thalia, and for 16 years I have played chess at the top level, going from knowing nothing about the game to competing in the England set up, and now I would like to make the next step—teaching others. Based in Chester, I will teach your children how to play, going from basic ideas such as how the pieces move, through to more advanced concepts such as how to play accurately without mistakes, how to create plans, how to win games and much, much more. See the rest of the site for information on who I am, what I can offer, my rates and contact information                        
@@ -174,6 +157,19 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+            <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </symbol>
+        </svg>
+
+        <div class="z-2 position-absolute container-fluid">
+            <div class="alert alert-warning d-flex align-items-center" style="padding-top: 175px; padding-bottom:20px" role="alert">
+                <svg class="bi flex-shrink-0 me-2" style="width:50px; padding-bottom:25px" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                <p class="text" style="color:black">This is a temporary site while the full version is under construction.</p>
             </div>
         </div>
     </body>
