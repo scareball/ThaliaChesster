@@ -17,10 +17,17 @@
                 background-color: skyblue !important;
             }
 
-            .alert{
-                height: 50px;
+            .sidebar {
+                height: 400%;
+                width: 0;
+                position: fixed;
+                z-index: 2;
+                background-color: rgb(7, 22, 56);
+                top: 110px;
+                left: 0;
+                overflow-x: hidden;
+                transition: 0.5s;
             }
-
             .home {
                 background-image:url("homeBackground.jpg");
                 min-height : 400%;
@@ -77,7 +84,7 @@
             <div class="container-fluid">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-light bar py-4">
                     <div class="container-fluid">
-                        <button type="button" class="btn btn-primary"><span class="navbar-toggler-icon" ></span></button>
+                        <button type="button" class="btn btn-primary" onclick="openNav()"><span class="navbar-toggler-icon" ></span></button>
                         <span class="navbar-brand position-absolute" style="margin-left: 75px; padding-top: 15px; padding-bottom: 10px;">
                             <h1 class="title">Home</h1>
                         </span>
@@ -87,6 +94,28 @@
                         </span>
                     </div>
                 </nav>
+
+                <div id="mySidebar" class="sidebar">
+                    <span class="mt-5">
+                        <br>
+                        <a href="javascript:void(0)" class="btn btn-secondary ml-3" onclick="closeNav()">X</a><br><br>
+                        <h2><a class="title pl-3" href="#">Top</a></h2>
+                        <h2><a class="title pl-3" href="#aboutMe">About Me</a></h2>
+                        <h2><a class="title pl-3" href="#favouriteGames">Favourite Games</a></h2>
+                        <h2><a class="title pl-3" href="#prices">Prices</a></h2>
+                        <h2><a class="title pl-3" href="#faq">FAQ's</a></h2>
+                        <h2><a class="title pl-3" href="#contactMe">Contact Me</a></h2>
+                    </span>
+                </div>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidebar").style.width = "350px";
+                    }
+                    function closeNav() {
+                        document.getElementById("mySidebar").style.width = "0";
+                    }
+                </script>
 
                 <div class="row justify-content-center pt-5" style="margin-top: 100px">
                     <div class="col-lg-5 ml-auto mr-auto">
@@ -98,7 +127,7 @@
                         </p>
                     </div>    
                 </div>
-                <div class="row justify-content-center pt-5" style="margin-top: 100px">
+                <div id="aboutMe" class="row justify-content-center pt-5" style="margin-top: 100px">
                     <div class="col-lg-5 ml-auto mr-auto">
                         <h2 class="title pt-2">About Me:</h2>
                         <div class="col-md ml-auto mr-auto">
@@ -133,7 +162,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="row justify-content-center pt-5" style="margin-top: 100px;">
+                <div id="favouriteGames" class="row justify-content-center pt-5" style="margin-top: 100px;">
                     <div class="col-lg-5 ml-auto mr-auto">
                         <h2 class="title pt-2">Favourite Games:</h2>
                         <br>
@@ -156,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center pt-5" style="margin-top: 100px">
+                <div id="prices" class="row justify-content-center pt-5" style="margin-top: 100px">
                     <div class="col-lg-5 ml-auto mr-auto">
                         <h2 class="title pt-2">Prices:</h2>
                         <span class="text">
@@ -177,12 +206,12 @@
                         </span>
                     </div>
                 </div>
-                <div class="row justify-conent-center pt-5" style="margin-top: 100px">
+                <div id="faq" class="row justify-conent-center pt-5" style="margin-top: 100px">
                     <div class="col-lg-5 ml-auto mr-auto">
                         <h2 class="title pt-2">FAQ's:</h2>
                     </div>
                 </div>
-                <div class="row justify-content-center pt-5" style="margin-top: 100px">
+                <div id="contactMe" class="row justify-content-center pt-5" style="margin-top: 100px">
                     <div class="col-lg-5 ml-auto mr-auto">
                         <h2 class="title pt-2">Contact Me:</h2>
                         <p class="text">
